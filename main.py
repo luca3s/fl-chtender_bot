@@ -25,7 +25,7 @@ async def on_message(message):
     regeln = client.get_channel(regeln_id)
     infos = client.get_channel(infos_id)
     
-    if message.channel == channel:
+    if message.channel == fortnite_infos:
         if message.author == client.user or message.author.top_role.name == role_1 or message.author.top_role.name == role_2:
             return
         else:
