@@ -5,7 +5,7 @@ TOKEN = os.environ['TOKEN']
 
 client = discord.Client()
 
-fortnite-infos_id = '466665501247012874'
+fortnite_infos_id = '466665501247012874'
 regeln_id = '466671498149625887'
 infos_id = '467369390086815755'
 role_1 = 'Mod'
@@ -21,7 +21,7 @@ async def on_ready():
     
 @client.event
 async def on_message(message):
-    fortnite-infos = client.get_channel(fortnite-infos_id)
+    fortnite_infos = client.get_channel(fortnite_infos_id)
     regeln = client.get_channel(regeln_id)
     infos = client.get_channel(infos_id)
     
