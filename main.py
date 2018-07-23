@@ -27,5 +27,6 @@ async def on_message(message):
         else:
             warning = 'Wer in diesen Channel schreibt wird gebannt vergisst es nicht. Es wurde schon einer dafür gebannt'.format(message)
             await client.send_message(message.channel, warning)
-    
+            await client.ban(message.author)
+            
 client.run(TOKEN)
